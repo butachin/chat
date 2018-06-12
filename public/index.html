@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <div class="header">
+    <h1 class="logo">LINEっぽいやつ</h1>
+  </div>
+  <div id="scroller" class="panel-body">
+    <ul id='messages'>
+    </ul>
+  </div>
+
+  <div class="container">
+    <div class="postarea cf">
+      <div class="postarea-text">
+        <textarea name="" id="nameInput" cols="5" rows="3" placeholder="ユーザー名を入力してください"></textarea>
+      </div>
+      <div class="postarea-text">
+        <textarea name="" id="messageInput" cols="30" rows="10" placeholder="メッセージ内容を入力してください"></textarea>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="chat.js"></script>
+
+</html>
