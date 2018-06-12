@@ -49,7 +49,7 @@ body {
   }
 
   .header {
-    background-color:#1b71a3;
+    background-color:#101930e8;
     width:100%;
     padding:.75em 0;
   }
@@ -67,9 +67,13 @@ body {
     color:#fff;
   }
 
+  .panel-body{
+    background-color: #7897C5;
+  }
+
   .container {
     width:100%;
-    background-color:#1b71a3;
+    background-color:rgba(255, 255, 255, 0.932);
   }
   
   .container .postarea {
@@ -85,7 +89,7 @@ body {
   .container .postarea .postarea-text textarea{
     font-size:1em;
     width: 100%;
-    border:1px solid #EDEDED;
+    border:1px solid rgba(237, 237, 237, 0.658);
     border-radius:5px;
     height:34px;
     resize:vertical;
@@ -106,34 +110,87 @@ body {
     overflow: auto;
 }
 
-/*******************************
-* 左からの吹き出し
-********************************/
 .left_balloon {
-    position: relative;
-    background: #f1f0f0;
-    border: 0px solid #777;
-    margin: 5px 10px;
-    padding: 5px 10px;
-    border-radius: 15px;
-    width: 400px;
-    clear: both;
+  position: relative;
+  background: #fff;
+  border: 1px solid #777;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-right: 20%;
+  clear: both;
+  max-width: 500px;
+  float: left;
 }
+
+.left_balloon:after,
+.left_balloon:before {
+  right: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.left_balloon:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.left_balloon:before {
+  border-color: rgba(0, 0, 0, 0);
+  border-right-color: #000;
+  border-width: 8px;
+  margin-top: -8px;
+}
+
 
 /*******************************
 * 右からの吹き出し
 ********************************/
+
 .right_balloon {
-    color: #fff;
-    position: relative;
-    background: #0084ff;
-    border: 0px solid #777;
-    margin: 5px 10px;
-    padding: 5px 10px;
-    border-radius: 15px;
-    width: 400px;
-    clear: both;
-    float: right;
+  position: relative;
+  background: #85e249;
+  border: 1px solid #777;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 20%;
+  clear: both;
+  max-width: 500px;
+  float: right;
+}
+
+.right_balloon:after,
+.right_balloon:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.right_balloon:after {
+  border-color: rgba(133, 226, 73, 0);
+  border-left-color: #85e249;
+  border-width: 7px;
+  margin-top: -7px;
+}
+
+.right_balloon:before {
+  border-color: rgba(119, 119, 119, 0);
+  border-left-color: #777;
+  border-width: 8px;
+  margin-top: -8px;
 }
 
 /*******************************
